@@ -29,11 +29,12 @@
     <TD></TD>
 	</TR>
   <TR>
+  <TD></TD>
 		<TD><IMG id="400" SRC="images/400.png" WIDTH="128" BORDER="0" HEIGHT="128" onclick="SelectNumer(400)"></TD>
 		<TD><IMG id="300" SRC="images/300.png" WIDTH="128" BORDER="0" HEIGHT="128" onclick="SelectNumer(300)"></TD>
 		<TD><IMG id="200" SRC="images/200.png" WIDTH="128" BORDER="0" HEIGHT="128" onclick="SelectNumer(200)"></TD>
 		<TD><IMG id="100" SRC="images/100.png" WIDTH="128" BORDER="0" HEIGHT="128" onclick="SelectNumer(100)"></TD>
-    <TD></TD>
+
     <TD></TD>
     <TD></TD>
 	</TR>
@@ -53,7 +54,7 @@
 <div id="End" style="font-size:40px"><a href="javascript:window.location.reload(true)" >
     再來一次</a></div>
 <div id="CacheImages" ></div>    
-<div align="center"><a href="https://nelsonprogram.blogspot.com/2022/11/blog-post_5.html" target="_blank">
+<div align="center"><a href="https://nelsonprogram.blogspot.com/2022/12/fitch-cheneys-five-card-trick.html" target="_blank">
     >>意見反映<<</a>　　　訪客數：<?php echo counter(); ?></div>
 </BODY>
 </HTML>
@@ -110,7 +111,8 @@
     for (i=1;i<4;i++)
       if (IsBigger(selectCards[0],selectCards[i]))
         guessCard+=100;//花色
-    let cardNumber=selectCards[0] % 100; //數字
+    //let cardNumber=selectCards[0] % 100; //數字
+    let cardNumber=7;
     if (isIncrease)
       cardNumber+=DifferNumber();
     else
